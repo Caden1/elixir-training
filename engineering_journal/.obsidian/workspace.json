@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning Elixir/A Floater.md",
+                "file": "Learning Elixir/Multiple Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning Elixir/A Floater.md",
+                "file": "Learning Elixir/Multiple Links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning Elixir/A Floater.md"
+                "file": "Learning Elixir/Multiple Links.md"
               }
             }
           }
@@ -225,12 +225,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e7637fb31ca3197",
+  "active": "a5ba795968d3e717",
   "lastOpenFiles": [
+    "Learning Elixir/A Floater.md",
     "Learning Elixir/Multiple Links.md",
     "Learning Elixir/A Nested Link.md",
     "Learning Elixir/Linked.md",
-    "Learning Elixir/A Floater.md",
     "Learning Elixir/Obsidian.md",
     "Learning Elixir/Another Link.md",
     "Learning Elixir",
