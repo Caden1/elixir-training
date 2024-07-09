@@ -43,7 +43,7 @@ R --clone--> L
 
 To do this, press the green **CODE** button on your forked repository and copy the URL provided.
 
-![GitHub Clone URL](./images//fork_curriculum_clone.png)
+![GitHub Clone URL](./files//fork_curriculum_clone.png)
 
 Then run the following command in the command line from the folder you want to create your `curriculum` folder in.
 <div style="background-color: lightcoral; font-weight: bold; padding: 1rem; color: black; margin: 1rem 0;">Ensure you replace URL with the copied URL</div>
@@ -77,7 +77,7 @@ m --> b3
 
 If we make significant changes to `main` you may want to update your fork before submitting a Pull Request. To update `main`, click the **Sync Fork** button from your forked repository on GitHub.
 
-![Sync DockYard Academy Fork](./images/sync_fork.png)
+![Sync DockYard Academy Fork](./files/sync_fork.png)
 
 Once you have the latest changes on your remote repository, you need to download them to your local repository. We call this process **pulling**.
 
@@ -220,11 +220,11 @@ sequenceDiagram
 
 To make a pull request, go the the **Pull Requests** tab on your remote repository and click **Create Pull Request**.
 
-![Create Pull Request Tab](./images/pull_request_tab.png)
+![Create Pull Request Tab](./files/pull_request_tab.png)
 
 Ensure that you are creating a pull request from your forked repository branch to the `main` branch of DockYard Academy.
 
-![Open Pull Request](./images/open_a_pull_request.png)
+![Open Pull Request](./files/open_a_pull_request.png)
 
 Click **Create Pull Request**. Fill in a title and description for the pull request and click **Create Pull Request**. This should create a Pull Request that is ready for review by a maintainer.
 

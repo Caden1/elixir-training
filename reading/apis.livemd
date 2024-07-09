@@ -206,10 +206,10 @@ Bearer Tokens are a type of access token used to authenticate and authorize requ
 
 Typically APIs allow you to create an account and receive an API key. We use this key as a bearer token that allows us to access API resources.
 
-For example, here's an example API request to the [Open AI API](https://platform.openai.com/docs/guides/images/usage) that requires a bearer token to create an image of a siamese cat. `$OPENAI_API_KEY` would be replaced with the actual bearer token to make the request.
+For example, here's an example API request to the [Open AI API](https://platform.openai.com/docs/guides/files/usage) that requires a bearer token to create an image of a siamese cat. `$OPENAI_API_KEY` would be replaced with the actual bearer token to make the request.
 
 ```
-curl https://api.openai.com/v1/images/generations \
+curl https://api.openai.com/v1/files/generations \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -d '{
@@ -339,7 +339,7 @@ We can build a more complex request using [Finch.build/5](https://hexdocs.pm/fin
 Take the following cURL request from the Open AI documentation.
 
 ```
-curl https://api.openai.com/v1/images/generations \
+curl https://api.openai.com/v1/files/generations \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_TOKEN" \
   -d '{
@@ -378,7 +378,7 @@ To avoid exposing your token, make sure to create a new token and revoke the tok
 ```elixir
 method = :post
 
-url = "https://api.openai.com/v1/images/generations"
+url = "https://api.openai.com/v1/files/generations"
 
 # Replace The $OPEN_API_TOKEN With Your Token.
 # Make Sure To Revoke The Token Later To Avoid Publicly Exposing It.
@@ -398,12 +398,12 @@ body =
 
 ### How Do We Know It's A Post Request?
 
-Most of this information is taken directly from the cURL request. However, the **Method** can be assumed as a POST request, even though it isn't specified. That's because the cURL request includes the `-d` option. a GET request cannot be sent with data, so cURL inferes that it's a post request. It also says so on the [Open AI API Reference](https://platform.openai.com/docs/api-reference/images) for image generation.
+Most of this information is taken directly from the cURL request. However, the **Method** can be assumed as a POST request, even though it isn't specified. That's because the cURL request includes the `-d` option. a GET request cannot be sent with data, so cURL inferes that it's a post request. It also says so on the [Open AI API Reference](https://platform.openai.com/docs/api-reference/files) for image generation.
 
 If we wanted to make this cURL request more explicit, it could be written with the `-X` option, but that's not necessary and not how many APIs will be documented.
 
 ```
-curl https://api.openai.com/v1/images/generations \
+curl https://api.openai.com/v1/files/generations \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_TOKEN" \

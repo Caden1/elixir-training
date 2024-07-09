@@ -200,7 +200,7 @@ This should create the following files.
 * creating counter/assets/js/app.js
 * creating counter/assets/tailwind.config.js
 * creating counter/priv/static/robots.txt
-* creating counter/priv/static/images/phoenix.png
+* creating counter/priv/static/files/phoenix.png
 * creating counter/priv/static/favicon.ico
 ```
 
@@ -712,7 +712,7 @@ This file contains the root of our HTML document. Our content `<p>Hello, world!<
           </ul>
         </nav>
         <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo"/>
+          <img src={Routes.static_path(@conn, "/files/phoenix.png")} alt="Phoenix Framework Logo"/>
         </a>
       </section>
     </header>
