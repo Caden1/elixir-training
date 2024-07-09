@@ -56,7 +56,10 @@ blank3 = "code"
 Enter your solution below.
 
 ```elixir
-
+first_word = "person"
+second_word = "coffee"
+third_word = "code"
+madlib = "A programmer is a " <> first_word <> " that turns " <> second_word <> " into " <> third_word <> "."
 ```
 
 ## String Interpolation Madlib
@@ -81,7 +84,10 @@ blank3 = "foobar"
 Enter your solution below.
 
 ```elixir
-
+first_word = "programmer"
+second_word = "coffee"
+third_word = "code"
+madlib = "#{first_word} and #{second_word} combined makes #{third_word}."
 ```
 
 ## Commit Your Progress
